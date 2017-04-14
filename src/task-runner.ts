@@ -43,5 +43,5 @@ export class TaskRunner {
         return task.start(...taskArgs);
     }
     
-    private tasks: Task[];
+    private tasks: Task[] = [];
 }
