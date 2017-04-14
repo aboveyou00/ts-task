@@ -1,0 +1,35 @@
+{
+    "name": "ts-task",
+    "version": "0.0.1",
+    "description": "A task runner designed in Typescript",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "prepublish": "rm -rf ./dist && tsc"
+    },
+    "main": "./dist/index.js",
+    "typings": "./dist/index",
+    "dependencies": {
+        "@types/lodash.find": "^4.6.2",
+        "auto-load": "^2.1.0",
+        "lodash.find": "^4.6.0"
+    },
+    "keywords": [
+        "typescript",
+        "task",
+        "ts-task"
+    ],
+    "contributors": [
+        "Brandon Slade <brandonyoyoslade@gmail.com>"
+    ],
+    "license": "ISC",
+    "private": false,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aboveyou00/ts-task.git"
+    },
+    "bugs": {
+        "url": "https://github.com/aboveyou00/ts-task/issues"
+    },
+    "homepage": "https://github.com/aboveyou00/ts-task#readme"
+}
