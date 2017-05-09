@@ -5,7 +5,8 @@
     "scripts": {
         "build": "tsc",
         "watch": "tsc -w",
-        "prepublish": "rm -rf ./dist && tsc"
+        "prepublish": "rm -rf ./dist && tsc",
+        "travis": "bash ./scripts/travis.sh"
     },
     "main": "./dist/index.js",
     "typings": "./dist/index",
