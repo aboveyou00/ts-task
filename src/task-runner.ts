@@ -7,7 +7,7 @@ export class TaskRunner {
     
     loadTasks(tasksDir: string) {
         let tasks_exports = autoLoad(tasksDir);
-        let tasks: Task[] = [];
+        let tasks: Task<any>[] = [];
         
         for (let key in tasks_exports) {
             if (tasks_exports.hasOwnProperty(key)) {
@@ -32,7 +32,7 @@ export class TaskRunner {
         }
     }
     
-    findTask(taskName: string): Task | undefined {
+    findTask(taskName: string): Task<any> | undefined {
         return find(this.tasks, t => t.name == taskName);
     }
     
@@ -43,5 +43,5 @@ export class TaskRunner {
         return task.start(...taskArgs);
     }
     
-    private tasks: Task[] = [];
+    private tasks: Task<any>[] = [];
 }

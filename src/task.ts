@@ -1,18 +1,10 @@
 
 
-export class Task {
-    constructor(name: string, task: (...args: string[]) => void) {
-        this._name = name;
-        this._task = task;
+export class Task<T> {
+    constructor(public readonly name: string, private task: (...args: string[]) => Promise<T>) {
     }
     
-    private _name: string;
-    get name() {
-        return this._name;
-    }
-    
-    private _task: (...args: string[]) => void;
-    start(...args: string[]) {
-        this._task(...args);
+    async start(...args: string[]): Promise<T> {
+        return await this.task(...args);
     }
 }
