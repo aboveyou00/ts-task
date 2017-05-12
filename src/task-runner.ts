@@ -1,4 +1,4 @@
-import * as autoLoad from 'auto-load';
+import autoLoad = require('auto-load');
 import { Task } from './task';
 import find = require('lodash.find');
 

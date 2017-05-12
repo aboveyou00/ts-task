@@ -12,9 +12,9 @@
   version "4.14.62"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.62.tgz#8674f9861582148a60b7a89cb260f11378d11683"
 
-auto-load@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/auto-load/-/auto-load-2.1.0.tgz#02f5f5fd5b016395c1c99931b02e74380a957562"
+auto-load@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/auto-load/-/auto-load-2.1.2.tgz#ea4a99ad52ad65fc72466f9a80465d883f4bea62"
 
 lodash.find@^4.6.0:
   version "4.6.0"
